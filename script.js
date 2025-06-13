@@ -3,7 +3,7 @@
 const API_KEY="15d17bd";
 const searchBtn = document.getElementById("search");
 const input = document.getElementById("input");
-const API_URL = `http://www.omdbapi.com/?apikey=${API_KEY}&s=`;
+const API_URL = `https://www.omdbapi.com/?apikey=${API_KEY}&s=`;
 
 
 
