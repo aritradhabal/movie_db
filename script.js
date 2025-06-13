@@ -130,10 +130,7 @@ function displayMovies(searches){
 
 }
 
-
-searchBtn.addEventListener('click', ()=>{
+input.addEventListener('input', ()=>{
     const userSearch = input.value.trim();
     fetchData(userSearch);
-    
 })
-
