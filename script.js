@@ -16,13 +16,15 @@ async function fetchData(userSearch){
 
         const section = document.querySelector('.all_cards');
         section.innerHTML = '';
+
         if(movieData.Response=="True"){
             displayMovies(movieData.Search);
             
         }
         else{
-            if(userSearch.length>2){
-                const notFound = document.createElement('div');
+            if(userSearch.length>2 && movieData.Response=="True"){
+
+            const notFound = document.createElement('div');
             notFound.className="notFound";
             notFound.textContent=`🤦 No movies available with your keyword "${userSearch}"`;
             section.appendChild(notFound);
